@@ -190,7 +190,7 @@ $(function () {
             $("nav").addClass("white-nav-top");
 
             // Show dark logo
-            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+            $('.navbar-brand img').attr('src', './img/leaf_logo_t.svg');
 
             // Show back to top button
             $("#back-to-top").fadeIn();
@@ -201,7 +201,7 @@ $(function () {
             $("nav").removeClass("white-nav-top");
 
             // Show logo
-            $(".navbar-brand img").attr("src", "img/logo/logo.png");
+            $('.navbar-brand img').attr('src', 'img/leaf_logo_t.svg');
 
             // Hide back to top button
             $("#back-to-top").fadeOut();
