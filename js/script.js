@@ -1,11 +1,16 @@
 /* =========================================
                 Preloader
 ============================================ */
-$(window).on('load', function () { // makes sure that whole site is loaded
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
-});
+// For Preloader
+let timerId = setInterval(
+  () => (document.querySelector('.pre__loader').style.display = 'none'),
+  2000
+);
 
+// after 2 seconds stop
+setTimeout(() => {
+  clearInterval(timerId);
+}, 2000);
 
 /* =========================================
                 Team
