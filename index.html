@@ -1091,7 +1091,7 @@
             <div class="col-md-6">
               <!-- Contact Right -->
               <div id="contact-right">
-                <form>
+                <form action="https://formspree.io/xyybgywk" method="POST">
                   <h4>Send Message</h4>
                   <p></p>
                   <div class="row">
@@ -1102,6 +1102,8 @@
                           class="form-control"
                           id="name"
                           placeholder="Your Name"
+                          name="name"
+                          required
                         />
                       </div>
                     </div>
@@ -1112,6 +1114,8 @@
                           class="form-control"
                           id="email"
                           placeholder="Email Address"
+                          name="_replyto"
+                          required
                         />
                       </div>
                     </div>
@@ -1122,6 +1126,7 @@
                           class="form-control"
                           id="phone"
                           placeholder="Phone No."
+                          name="Phone"
                         />
                       </div>
                     </div>
@@ -1132,6 +1137,7 @@
                           class="form-control"
                           id="subject"
                           placeholder="Subject"
+                          name="_subject"
                         />
                       </div>
                     </div>
@@ -1141,16 +1147,15 @@
                       class="form-control"
                       id="message"
                       placeholder="Message"
+                      name="message"
                     ></textarea>
                   </div>
 
                   <div id="submit-btn">
-                    <a
+                    <button 
                       class="btn btn-general btn-yellow"
-                      href="#"
-                      title="Submit"
-                      role="button"
-                      >Submit</a
+                      type="submit"
+                      >Submit</button
                     >
                   </div>
                 </form>
